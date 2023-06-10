@@ -35,13 +35,13 @@ SOA-based applications are distributed multi-tier applications that have present
 
 There are two major roles within Service-oriented Architecture:
 
-__Service provider__: The service provider is the maintainer of the service and the organization that makes available one or more services for others to use. To advertise services, the provider can publish them in a registry, together with a service contract that specifies the nature of the service, how to use it, the requirements for the service, and the fees charged.
+**Service provider**: The service provider is the maintainer of the service and the organization that makes available one or more services for others to use. To advertise services, the provider can publish them in a registry, together with a service contract that specifies the nature of the service, how to use it, the requirements for the service, and the fees charged.
 
-__Service consumer__: The service consumer can locate the service metadata in the registry and develop the required client components to bind and use the service.
+**Service consumer**: The service consumer can locate the service metadata in the registry and develop the required client components to bind and use the service.
 
 ![SampleDesign](https://miro.medium.com/max/710/1*AmQGD2rxKvKBknYw9dJDCw.png)
 
-[__MORE ABOUT SOA__](https://www.geeksforgeeks.org/service-oriented-architecture/)
+[**MORE ABOUT SOA**](https://www.geeksforgeeks.org/service-oriented-architecture/)
 
 ### pros
 
@@ -54,6 +54,6 @@ __Service consumer__: The service consumer can locate the service metadata in th
 
 In SOA, ESBs(Enterprise Service Bus) are the main pain-point in its architecture, They handled, validation, routing and authentication all in one place. This caused them to be difficult to maintain, and required high resources(both manual and technical).
 
-- __Extra overload__: In SOA, all inputs are validated before it is sent to the service. If you are using multiple services then it will overload your system with extra computation.
+- **Extra overload**: In SOA, all inputs are validated before it is sent to the service. If you are using multiple services then it will overload your system with extra computation.
 - SOA is costly in terms of human resource, development, and technology.
-- __High bandwidth server__: As some web service sends and receives messages and information frequently so it easily reaches a million requests per day. So it involves a high-speed server with a lot of data bandwidth to run a web service.
+- **High bandwidth server**: As some web service sends and receives messages and information frequently so it easily reaches a million requests per day. So it involves a high-speed server with a lot of data bandwidth to run a web service.

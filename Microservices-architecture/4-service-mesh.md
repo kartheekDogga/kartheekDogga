@@ -17,18 +17,18 @@ Microservices communicate betweeen them a lot. The communincation can pose a lot
 - protocol conversion
 - comm security
 - authentication
-- reliability(timeouts, retries, health check, __circuit breaking__)
+- reliability(timeouts, retries, health check, **circuit breaking**)
 - monitoring
 - servcie discovery
 - Load balancing
 
-__circuit breaker__: just like the name suggests, this helps in preventing cascading of failures when a service fails.
+**circuit breaker**: just like the name suggests, this helps in preventing cascading of failures when a service fails.
 
 using service mesh helps offload devs from handling commuication aspects and focus on business logic.
 
 ## Service Mesh Architecture
 
-When 2 services want to communicate, we place 2 service-mesh components between each of them which can handle communication. These service-mesh components are called __data-planes__. Data-planes do all the heavy-lifiting of service communication(i.e. communication, auth, retries, timeout, monitoring etc...).
+When 2 services want to communicate, we place 2 service-mesh components between each of them which can handle communication. These service-mesh components are called **data-planes**. Data-planes do all the heavy-lifiting of service communication(i.e. communication, auth, retries, timeout, monitoring etc...).
 
 ![img](https://cdn.ttgtmedia.com/rms/onlineimages/how_a_service_mesh_works-f.png)
 
@@ -42,7 +42,7 @@ Types of service mesh(data-planes):
 |Performance| platform-agnostic|
 |coupled with code| code-agnostic|
 
-__NOTE__: Usually when referring to mesh components or data-planes we refer them as sidecars/ sidecar-proxies, because they are the more popular choice and also the recommended ones in most cases.
+**NOTE**: Usually when referring to mesh components or data-planes we refer them as sidecars/ sidecar-proxies, because they are the more popular choice and also the recommended ones in most cases.
 
 A few service mesh implementations are:
 

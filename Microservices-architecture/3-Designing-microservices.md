@@ -56,7 +56,7 @@ While mapping components, in reality, we can always encounter gray areas where t
 - underlying data is an atomic unit
 - service should not depend on data from other services to function properly
 
-for e.g. if an __employees service__ depends on __address service__ to return employee data, this means, this always depends on an external service to execute a funtionality. This is a design flaw and needs to be redesigned properly.
+for e.g. if an **employees service** depends on **address service** to return employee data, this means, this always depends on an external service to execute a funtionality. This is a design flaw and needs to be redesigned properly.
 
 If we were to choose between data-replication tight dependency of microservices, its always better to choose a little bit of data replication. Because tight dependency like above mentioned example can cause many problems
 
@@ -73,8 +73,8 @@ Efficient communication patterns is crucial. An inefficient comm. pattern can im
 
 Some of the main communication patterns in microservices are:
 
-1. __1-1 Synchronours communication__: used when a service needs a response from ext source to continue the process.
+1. **1-1 Synchronours communication**: used when a service needs a response from ext source to continue the process.
 It has to be noted that this is diferent from tight-coupling microservices, which is a design flaw. Many a times, there could be a significant portion of funtionality that falls into business capability of other service, but the client(caller-service) needs a response(success/failure/or some data) to take next logical action. \
 one good example of this scenario is user/order service awaiting payment service to respond to payment-request with a response.
-2. __1-1 Asynchronours communication__: This process can be thought of like fire-and-forget.
-3. __pub-sub/Event-driven__: unlike async communication, the producer service has no idea who the consumer/receiver of the event is. often these events are of one-to-many or many-to-many relationship.
+2. **1-1 Asynchronours communication**: This process can be thought of like fire-and-forget.
+3. **pub-sub/Event-driven**: unlike async communication, the producer service has no idea who the consumer/receiver of the event is. often these events are of one-to-many or many-to-many relationship.
