@@ -1,5 +1,7 @@
 # IAM Poilicies
 
+[DOCUMENTATION](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)
+
 Policies are means in AWS to grant permissions to users, groups and roles. Policies are JSON documents that define the permissions. Policies can be attached to users, groups and roles.
 
 IAM policies define permissions for an action regardless of the method that you use to perform the operation. For example, if a policy allows the GetUser action, then a user with that policy can get user information from the AWS Management Console, the AWS CLI, or the AWS API.
@@ -20,6 +22,8 @@ Customer managed policies – Managed policies that you create and manage in you
 ### Policy types
 
 The following policy types, listed in order of usage-frequency, are available for use in AWS.
+
+> Vocabulary: **Principal** - An entity in AWS that is allowed or denied access to a resource. Principals can be in the same account as the resource or in other accounts.
 
 - **Identity-based policies** – Attach [managed](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#managedpolicy:~:text=be%20further%20categorized%3A-,Managed%20policies,-%E2%80%93%20Standalone%20identity%2Dbased) and [inline](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#managedpolicy:~:text=AWS%20managed%20policies.-,Inline%20policies,-%E2%80%93%20Policies%20that%20you) policies to IAM identities (users, groups to which users belong, or roles). Identity-based policies grant permissions to an identity.
 
