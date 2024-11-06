@@ -7,6 +7,8 @@
 |**CACHING**|Provides support for caching via the If-Modified-Since header.|Expands on the caching support by using additional headers like cache-control, conditional headers like If-Match and by using entity tags|HTTP/2 does not change much in terms of caching. With the server push feature if the client finds the resources are already present in the cache, it can cancel the pushed stream.|
 |**WEB TRAFFIC**|HTTP/1.1 provides faster delivery of web pages and reduces web traffic as compared to HTTP/1.0. However, TCP starts slowly and with domain sharding (resources can be downloaded simultaneously by using multiple domains), connection reuse and pipelining, there is an increased risk of network congestion.||HTTP/2 utilizes multiplexing and server push to effectively reduce the page load time by a greater margin along with being less sensitive to network delays.|
 
+
+
 Before knowing difference between HTTP and HTTPS, it is important to know about \
 **TLS**([**What is TLS?**](https://www.cloudflare.com/en-in/learning/ssl/transport-layer-security-tls/)),\
 [**TLS 1.3 vs 1.2**](https://www.cloudflare.com/en-in/learning/ssl/why-use-tls-1.3/),\
